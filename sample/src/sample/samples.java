@@ -216,31 +216,31 @@ public class samples {
 	    public void testRemove() {
 	        final MiniHashMap<String, Integer> map = new MiniHashMap<String, Integer>();
 	        map.put("Lars", 1);
-	        map.put("Günther", 12);
+	        map.put("GÃ¼nther", 12);
 	        map.put("Max", 2);
 
 	        assertEquals(null, map.get("Markus"));
 	        assertEquals(1, map.get("Lars"), 0);
 	        assertEquals(2, map.get("Max"), 0);
-	        assertEquals(12, map.get("Günther"), 0);
+	        assertEquals(12, map.get("GÃ¼nther"), 0);
 
 	        map.remove("Max");
 	        assertEquals(null, map.get("Markus"));
 	        assertEquals(1, map.get("Lars"), 0);
 	        assertEquals(null, map.get("Max"));
-	        assertEquals(12, map.get("Günther"), 0);
+	        assertEquals(12, map.get("GÃ¼nther"), 0);
 
 	        assertEquals(true, map.remove("Lars"));
 	        assertEquals(false, map.remove("Lars"));
 	        assertEquals(null, map.get("Markus"));
 	        assertEquals(null, map.get("Lars"));
 	        assertEquals(null, map.get("Max"));
-	        assertEquals(12, map.get("Günther"), 0);
+	        assertEquals(12, map.get("GÃ¼nther"), 0);
 
 	        map.put("Lars", 1);
-	        map.put("Günther", 12);
+	        map.put("GÃ¼nther", 12);
 	        map.put("Max", 2);
-	        assertEquals(true, map.remove("Günther"));
+	        assertEquals(true, map.remove("GÃ¼nther"));
 
 	    }
 
@@ -248,13 +248,13 @@ public class samples {
 	    public void testStandard() {
 	        final MiniHashMap<String, Integer> map = new MiniHashMap<String, Integer>();
 	        map.put("Lars", 1);
-	        map.put("Günther", 12);
+	        map.put("GÃ¼nther", 12);
 	        map.put("Max", 2);
 
 	        assertEquals(null, map.get("Markus"));
 	        assertEquals(1, map.get("Lars"), 0);
 	        assertEquals(2, map.get("Max"), 0);
-	        assertEquals(12, map.get("Günther"), 0);
+	        assertEquals(12, map.get("GÃ¼nther"), 0);
 
 	    }
 
@@ -262,16 +262,16 @@ public class samples {
 	    public void testDoublePut() {
 	        final MiniHashMap<String, Integer> map = new MiniHashMap<String, Integer>();
 	        map.put("Lars", 1);
-	        map.put("Günther", 12);
+	        map.put("GÃ¼nther", 12);
 
 	        assertEquals(1, map.get("Lars"), 0);
-	        assertEquals(12, map.get("Günther"), 0);
+	        assertEquals(12, map.get("GÃ¼nther"), 0);
 
 	        map.put("Lars", 14);
-	        map.put("Günther", 122);
+	        map.put("GÃ¼nther", 122);
 	        map.put("Fred", 11111);
 	        assertEquals(14, map.get("Lars"), 0);
-	        assertEquals(122, map.get("Günther"), 0);
+	        assertEquals(122, map.get("GÃ¼nther"), 0);
 	    }
 
 	    @Test
@@ -345,6 +345,33 @@ public class samples {
 	            assertNull(mapJdK.get(key));
 	        }
 	    }
+	
+	
+	Import .*;
+
+Class abs
+
+{
+
+DataInputStream dis = new DataInputStream();
+
+Int a,b,c;
+
+a=Integer.parseInt(dis.readLine());
+
+b=Integer.parseInt(dis.readLine());
+
+c=a+b;
+
+System.out println(c);
+
+}
+	
+	
+	
+	
+	BufferedReader kin = new BufferedReader ( new InputStreamReader();
+kin.readline();
 	}
 
 }
